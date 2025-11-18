@@ -1,0 +1,76 @@
+<script>
+// Login functionality
+document.getElementById('loginForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    const submitBtn = document.querySelector('.btn-login');
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+    
+    try {
+        const response = await fetch('../../backend/api/auth/login.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email: email,
+                password: password
+            })
+        });
+        
+        const result = await response.json();
+        
+        console.log('Login response:', result);
+        
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+        
+        if (result.success) {
+            // Store token and user data
+            localStorage.setItem('auth_token', result.data.token);
+            localStorage.setItem('adminLoggedIn', 'true');
+            localStorage.setItem('user', JSON.stringify(result.data.user));
+            
+            showToast('Login successful! Redirecting...', 'success');
+            
+            setTimeout(() => {
+                window.location.href = 'admin.html';
+            }, 1000);
+        } else {
+            showToast(result.message || 'Login failed', 'error');
+        }
+    } catch (error) {
+        console.error('Login error:', error);
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+        showToast('Connection error. Please check your server.', 'error');
+    }
+});
+
+// Show toast notification
+function showToast(message, type) {
+    const toast = document.getElementById('toast');
+    const toastIcon = toast.querySelector('.toast-icon');
+    const toastMessage = toast.querySelector('.toast-message');
+    
+    toastMessage.textContent = message;
+    
+    if (type === 'success') {
+        toastIcon.style.background = '#4CAF50';
+        toastIcon.textContent = '✓';
+    } else {
+        toastIcon.style.background = '#f44336';
+        toastIcon.textContent = '✕';
+    }
+    
+    toast.classList.add('show');
+    
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 3000);
+}
+</script>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raito Opto Electronics Private Limited - World Leader in Laser Cutting Solutions</title>
+    <link rel="stylesheet" href="assets/css/main/styles.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Top Header Bar -->
+    <div class="top-header">
+        <div class="top-header-content">
+            <div class="top-header-left">
+                <span>📧 sales@raitoopto.com</span>
+                <span>📞 +91 (422) 123-4567</span>
+                <span>🕐 Mon-Fri: 8AM-6PM EST</span>
+            </div>
+            <div class="top-header-right">
+                <a href="pages/public/about.html">About Us</a>
+                <a href="pages/public/contact.html">Contact us</a>
+                <a href="pages/public/company.html">Company Details</a>
+                <a href="pages/public/solutions.html">Solutions</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <nav>
+            <a href="" class="logo">
+                <img src="assets/images/logo/raito.jpg" alt="Your Website Logo" width="150" height="80">
+                <div class="logo-text">
+                    <span class="logo-main">RAITO OPTO ELECTRONICS</span>
+                    <span class="logo-sub">Private Limited</span>
+                </div>
+            </a>
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <ul class="nav-menu" id="navMenu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="pages/public/products.html">Products</a></li>
+                <li><a href="pages/public/solutions.html">Solutions</a></li>
+                <li><a href="pages/public/technology.html">Technology</a></li>
+                <li><a href="pages/public/service.html">Service</a></li>
+                <li><a href="pages/public/company.html">Company</a></li>
+                <li><a href="pages/public/contact.html">Contact</a></li>
+                <li><a href="pages/auth/login.html" class="nav-cta">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slide slide-1 active">
+            <div class="slide-content">
+                <div class="slide-content-inner">
+                    <div class="slide-subtitle">World Leader in Laser Technology</div>
+                    <h1>Precision Fiber Laser Cutting Systems</h1>
+                    <p>Experience unmatched cutting speed, accuracy, and efficiency with our advanced fiber laser technology. Trusted by manufacturers worldwide for over 25 years.</p>
+                    <div class="slide-buttons">
+                        <a href="pages/public/products.html" class="cta-button cta-primary">Explore Products</a>
+                        <a href="pages/public/contact.html" class="cta-button cta-secondary">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <div class="slide-content-inner">
+                    <div class="slide-subtitle">Innovation That Drives Industry</div>
+                    <h1>Cutting-Edge Performance & Reliability</h1>
+                    <p>Achieve superior cutting results with speeds up to 150m/min and positioning accuracy of ±0.03mm. Built for 24/7 industrial operations with minimal downtime.</p>
+                    <div class="slide-buttons">
+                        <a href="#technology" class="cta-button cta-primary">View Technology</a>
+                        <a href="#solutions" class="cta-button cta-secondary">See Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <div class="slide-content-inner">
+                    <div class="slide-subtitle">Trusted Globally</div>
+                    <h1>10,000+ Installations Worldwide</h1>
+                    <p>Join industry leaders across 50+ countries who trust TechCut for their laser cutting needs. Exceptional quality backed by world-class support and training.</p>
+                    <div class="slide-buttons">
+                        <a href="#about" class="cta-button cta-primary">Our Story</a>
+                        <a href="#contact" class="cta-button cta-secondary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="slider-arrow prev" onclick="changeSlide(-1)">‹</button>
+        <button class="slider-arrow next" onclick="changeSlide(1)">›</button>
+        
+        <div class="slider-nav">
+            <span class="slider-dot active" onclick="goToSlide(0)"></span>
+            <span class="slider-dot" onclick="goToSlide(1)"></span>
+            <span class="slider-dot" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-number">10,000+</div>
+            <div class="stat-label">Machines Sold</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">🌍</div>
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Countries Served</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">⚙️</div>
+            <div class="stat-number">25</div>
+            <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon">⭐</div>
+            <div class="stat-number">99.8%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="section-header">
+            <div class="section-label">Why Choose TechCut</div>
+            <h2 class="section-title">Unmatched Excellence in Every Detail</h2>
+            <p class="section-description">Discover why leading manufacturers worldwide trust TechCut for their laser cutting solutions. Our commitment to innovation, quality, and customer success sets us apart.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🚀</div>
+                </div>
+                <h3 class="feature-title">Cutting-Edge Technology</h3>
+                <p class="feature-description">Latest innovations in laser technology delivering superior performance, efficiency, and precision for all your cutting needs.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🛡️</div>
+                </div>
+                <h3 class="feature-title">Built to Last</h3>
+                <p class="feature-description">Premium components and rigorous quality control ensure maximum uptime and minimal maintenance requirements.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">💡</div>
+                </div>
+                <h3 class="feature-title">Energy Efficient</h3>
+                <p class="feature-description">Advanced power management systems reduce operational costs by up to 40% compared to traditional cutting methods.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🔧</div>
+                </div>
+                <h3 class="feature-title">Easy Maintenance</h3>
+                <p class="feature-description">User-friendly design with accessible components and comprehensive diagnostic systems for hassle-free upkeep.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">📞</div>
+                </div>
+                <h3 class="feature-title">24/7 Support</h3>
+                <p class="feature-description">Global support team with technical experts ready to assist you anytime, ensuring maximum productivity.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <div class="feature-icon">🎓</div>
+                </div>
+                <h3 class="feature-title">Training Included</h3>
+                <p class="feature-description">Comprehensive training programs and certification courses to maximize your team's expertise and machine utilization.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase -->
+    <section class="products-showcase">
+        <div class="section-header">
+            <div class="section-label">Our Products</div>
+            <h2 class="section-title">Industry-Leading Laser Solutions</h2>
+            <p class="section-description">From fiber lasers to specialized cutting systems, we offer comprehensive solutions for every manufacturing challenge.</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-badge">BESTSELLER</div>
+                    ⚡
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Fiber Laser Cutter Pro</h3>
+                    <p class="product-description">High-performance fiber laser cutting system with exceptional speed and precision for industrial metal fabrication and manufacturing.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Power Range</span> <span class="spec-value">1kW - 30kW</span></li>
+                        <li><span class="spec-label">Cutting Area</span> <span class="spec-value">3000 x 1500mm</span></li>
+                        <li><span class="spec-label">Max Speed</span> <span class="spec-value">150m/min</span></li>
+                        <li><span class="spec-label">Accuracy</span> <span class="spec-value">±0.03mm</span></li>
+                    </ul>
+                    <div class="product-actions">
+                        <a href="#fiber-pro" class="btn-primary">Learn More</a>
+                        <button class="btn-secondary" onclick="openQuoteForm()">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="product-badge">NEW</div>
+                    🔷
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">CO2 Laser System</h3>
+                    <p class="product-description">Versatile CO2 laser cutting solution for non-metal materials with exceptional edge quality and precise processing capabilities.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Power Range</span> <span class="spec-value">80W - 300W</span></li>
+                        <li><span class="spec-label">Cutting Area</span> <span class="spec-value">1300 x 900mm</span></li>
+                        <li><span class="spec-label">Max Thickness</span> <span class="spec-value">25mm</span></li>
+                        <li><span class="spec-label">Precision</span> <span class="spec-value">±0.05mm</span></li>
+                    </ul>
+                    <div class="product-actions">
+                        <a href="#co2-standard" class="btn-primary">Learn More</a>
+                        <button class="btn-secondary" onclick="openQuoteForm()">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="product-badge">ADVANCED</div>
+                    🎯
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Tube Cutting Machine</h3>
+                    <p class="product-description">Advanced tube and pipe cutting solution for complex geometries with high throughput and minimal material waste.</p>
+                    <ul class="product-specs">
+                        <li><span class="spec-label">Tube Diameter</span> <span class="spec-value">20-300mm</span></li>
+                        <li><span class="spec-label">Max Length</span> <span class="spec-value">6500mm</span></li>
+                        <li><span class="spec-label">Precision</span> <span class="spec-value">±0.05mm</span></li>
+                        <li><span class="spec-label">Capacity</span> <span class="spec-value">24/7 Operation</span></li>
+                    </ul>
+                    <div class="product-actions">
+                        <a href="#tube-cutting" class="btn-primary">Learn More</a>
+                        <button class="btn-secondary" onclick="openQuoteForm()">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology-section">
+        <div class="section-header">
+            <div class="section-label" style="color: var(--primary-red);">Advanced Technology</div>
+            <h2 class="section-title" style="color: white;">Innovation at the Core</h2>
+            <p class="section-description" style="color: #ccc;">Discover the cutting-edge technologies that power our laser systems and deliver unmatched performance.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-number">01</div>
+                <h3 class="tech-title">AI-Powered Optimization</h3>
+                <p class="tech-description">Machine learning algorithms continuously optimize cutting parameters for maximum efficiency and quality.</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-number">02</div>
+                <h3 class="tech-title">Smart Nesting Software</h3>
+                <p class="tech-description">Intelligent material utilization reduces waste by up to 15% through advanced nesting algorithms.</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-number">03</div>
+                <h3 class="tech-title">Precision Control System</h3>
+                <p class="tech-description">High-speed servo motors and advanced motion control deliver positioning accuracy of ±0.03mm.</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-number">04</div>
+                <h3 class="tech-title">Adaptive Focus Technology</h3>
+                <p class="tech-description">Automatically adjusts laser focus for different material thicknesses and types in real-time.</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-number">05</div>
+                <h3 class="tech-title">Remote Monitoring</h3>
+                <p class="tech-description">Cloud-connected systems enable remote diagnostics, monitoring, and predictive maintenance.</p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-number">06</div>
+                <h3 class="tech-title">Energy Management</h3>
+                <p class="tech-description">Intelligent power systems optimize energy consumption and reduce operational costs significantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <div class="section-label">Customer Success Stories</div>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-description">Hear from manufacturers who've transformed their operations with TechCut laser systems.</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <div class="testimonial-icon">"</div>
+                <p class="testimonial-text">"Raito Opto's fiber laser has revolutionized our production line. We've seen a 40% increase in throughput while maintaining superior cut quality. The ROI was achieved in just 18 months. Outstanding technology and exceptional support."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JD</div>
+                    <div class="author-info">
+                        <h4>John Davidson</h4>
+                        <p>Manufacturing Director, MetalWorks Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-icon">"</div>
+                <p class="testimonial-text">"The precision and reliability of Raito Opto machines are unmatched. We run 24/7 operations with minimal downtime. The training program was comprehensive, and the technical support team is always there when we need them."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <h4>Sarah Martinez</h4>
+                        <p>Operations Manager, Precision Parts Co.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-icon">"</div>
+                <p class="testimonial-text">"Investing in Raito Opto was the best decision for our business. The energy efficiency alone saves us thousands monthly. The cutting speed and accuracy have allowed us to take on more complex projects and expand our client base."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RL</div>
+                    <div class="author-info">
+                        <h4>Robert Lee</h4>
+                        <p>CEO, Advanced Manufacturing Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Manufacturing?</h2>
+            <p>Join thousands of satisfied customers worldwide. Get started with Raito Opto Electronics today and experience the future of laser cutting technology.</p>
+            <div class="cta-buttons">
+                <a href="#" onclick="openQuoteForm(); return false;" class="cta-btn-white">Request a Quote</a>
+                <a href="#contact" class="cta-btn-outline">Schedule a Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-section">
+                <h3>Raito Opto Electronics</h3>
+                <p>World leader in advanced laser cutting solutions. Serving manufacturers globally with innovative technology, exceptional quality, and unmatched customer support since 1999.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📺</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#fiber-pro">Fiber Laser Cutters</a></li>
+                    <li><a href="#co2">CO2 Laser Systems</a></li>
+                    <li><a href="#tube">Tube Cutting Machines</a></li>
+                    <li><a href="#welding">Laser Welding</a></li>
+                    <li><a href="#marking">Laser Marking</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#support">Technical Support</a></li>
+                    <li><a href="#training">Training Programs</a></li>
+                    <li><a href="#maintenance">Maintenance Services</a></li>
+                    <li><a href="#parts">Spare Parts</a></li>
+                    <li><a href="#warranty">Warranty Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#news">News & Press</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#investors">Investor Relations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Raito Opto Electronics Private Limited. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#cookies">Cookie Policy</a>
+                <a href="#sitemap">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script src="assets/js/core/data-manager.js"></script>
+<script src="assets/js/pages/script.js"></script>
+<script src="assets/js/core/website-loader.js"></script>
+</body>
+</html>

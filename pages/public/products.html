@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Raito Opto Electronics</title>
+    <link rel="stylesheet" href="../../assets/css/main/styles.css">
+    <link rel="stylesheet" href="../../assets/css/pages/products.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Top Header Bar -->
+    <div class="top-header">
+        <div class="top-header-content">
+            <div class="top-header-left">
+                <span>📧 sales@raitoopto.com</span>
+                <span>📞 +91 (422) 123-4567</span>
+                <span>🕐 Mon-Fri: 8AM-6PM EST</span>
+            </div>
+            <div class="top-header-right">
+                <a href="about.html">About Us</a>
+                <a href="#news">News & Events</a>
+                <a href="#support">Support Center</a>
+                <a href="../auth/login.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <nav>
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/images/logo/raito.jpg" alt="Your Website Logo" width="150" height="80">
+                <div class="logo-text">
+                    <span class="logo-main">RAITO OPTO ELECTRONICS</span>
+                    <span class="logo-sub">Private Limited</span>
+                </div>
+            </a>
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html">Home</a></li>
+                <li class="active"><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../auth/login.html" class="nav-cta">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Our Products</h1>
+            <p class="hero-subtitle">Cutting-Edge Laser Solutions for Every Industrial Need</p>
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a> / <span>Products</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="product-filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="fiber">Fiber Lasers</button>
+                <button class="filter-btn" data-category="co2">CO2 Lasers</button>
+                <button class="filter-btn" data-category="tube">Tube Cutting</button>
+                <button class="filter-btn" data-category="welding">Welding</button>
+                <button class="filter-btn" data-category="marking">Marking</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Fiber Laser Products -->
+                <div class="product-item" data-category="fiber">
+                    <div class="product-image">
+                        <div class="product-badge bestseller">Bestseller</div>
+                        <div class="image-placeholder">⚡</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" onclick="openProductModal('fiber-pro')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fiber Laser Cutter Pro 3015</h3>
+                        <p class="product-category">Fiber Laser Systems</p>
+                        <div class="product-specs-brief">
+                            <span>1-30kW</span>
+                            <span>3000x1500mm</span>
+                            <span>±0.03mm</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('fiber-pro')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="fiber">
+                    <div class="product-image">
+                        <div class="product-badge new">New</div>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">⚡</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fiber Laser Cutter Compact 2040</h3>
+                        <p class="product-category">Fiber Laser Systems</p>
+                        <div class="product-specs-brief">
+                            <span>1-12kW</span>
+                            <span>2000x4000mm</span>
+                            <span>±0.05mm</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('fiber-compact')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CO2 Laser Products -->
+                <div class="product-item" data-category="co2">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">🔷</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>CO2 Laser System Standard</h3>
+                        <p class="product-category">CO2 Laser Systems</p>
+                        <div class="product-specs-brief">
+                            <span>80-300W</span>
+                            <span>1300x900mm</span>
+                            <span>±0.05mm</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('co2-standard')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="co2">
+                    <div class="product-image">
+                        <div class="product-badge premium">Premium</div>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">🔷</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>CO2 Laser System Pro 1610</h3>
+                        <p class="product-category">CO2 Laser Systems</p>
+                        <div class="product-specs-brief">
+                            <span>150-500W</span>
+                            <span>1600x1000mm</span>
+                            <span>±0.03mm</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('co2-pro')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tube Cutting Products -->
+                <div class="product-item" data-category="tube">
+                    <div class="product-image">
+                        <div class="product-badge advanced">Advanced</div>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">🎯</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tube Cutting Machine TC-300</h3>
+                        <p class="product-category">Tube Cutting Systems</p>
+                        <div class="product-specs-brief">
+                            <span>20-300mm</span>
+                            <span>6500mm</span>
+                            <span>±0.05mm</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('tube-300')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="tube">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">🎯</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tube Cutting Machine TC-600</h3>
+                        <p class="product-category">Tube Cutting Systems</p>
+                        <div class="product-specs-brief">
+                            <span>50-600mm</span>
+                            <span>12000mm</span>
+                            <span>±0.03mm</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('tube-600')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Welding Products -->
+                <div class="product-item" data-category="welding">
+                    <div class="product-image">
+                        <div class="product-badge new">New</div>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">🔥</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laser Welding System LW-2000</h3>
+                        <p class="product-category">Welding Systems</p>
+                        <div class="product-specs-brief">
+                            <span>2000W</span>
+                            <span>Handheld</span>
+                            <span>Multi-material</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('welding-2000')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marking Products -->
+                <div class="product-item" data-category="marking">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">✍️</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laser Marking System LM-50</h3>
+                        <p class="product-category">Marking Systems</p>
+                        <div class="product-specs-brief">
+                            <span>50W</span>
+                            <span>200x200mm</span>
+                            <span>High Speed</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('marking-50')">📥</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="marking">
+                    <div class="product-image">
+                        <div class="product-badge premium">Premium</div>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">✍️</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laser Marking System LM-100 Pro</h3>
+                        <p class="product-category">Marking Systems</p>
+                        <div class="product-specs-brief">
+                            <span>100W</span>
+                            <span>300x300mm</span>
+                            <span>Ultra-fast</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <button class="btn-icon" onclick="addToCompare(this)">⚖️</button>
+                            <button class="btn-icon" onclick="downloadBrochure('marking-100')">📥</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Bar -->
+    <div class="comparison-bar" id="comparisonBar">
+        <div class="comparison-content">
+            <div class="comparison-items" id="comparisonItems">
+                <span class="comparison-count">0 products selected</span>
+            </div>
+            <div class="comparison-actions">
+                <button class="btn-compare" onclick="showComparison()">Compare Now</button>
+                <button class="btn-clear" onclick="clearComparison()">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Need Help Choosing the Right Product?</h2>
+            <p>Our experts are here to help you find the perfect laser solution for your needs</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-btn-white">Contact Sales</a>
+                <a href="#" class="cta-btn-outline" onclick="openQuoteForm(); return false;">Request Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-section">
+                <h3>Raito Opto Electronics</h3>
+                <p>World leader in advanced laser cutting solutions. Serving manufacturers globally with innovative technology.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💼</a>
+                    <a href="#" class="social-link">📺</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Fiber Laser Cutters</a></li>
+                    <li><a href="#">CO2 Laser Systems</a></li>
+                    <li><a href="#">Tube Cutting</a></li>
+                    <li><a href="#">Welding Systems</a></li>
+                    <li><a href="#">Marking Systems</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Technical Support</a></li>
+                    <li><a href="#">Training Programs</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Spare Parts</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="../auth/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Raito Opto Electronics Private Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script src="../../assets/js/pages/script.js"></script>
+    <script src="../../assets/js/pages/products.js"></script>
+    <script src="../../assets/js/core/data-manager.js"></script>
+<script src="../../assets/js/core/website-loader.js"></script>
+</body>
+</html>

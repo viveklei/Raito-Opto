@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Raito Opto Electronics</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="login-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Login Container -->
+    <div class="login-container">
+        <!-- Left Side - Branding -->
+        <div class="login-left">
+            <div class="brand-content">
+                <div class="logo-large">
+                     <img src="raito.jpg" alt="Your Website Logo" width="200" height="100">
+                <div class="logo-text">
+                        <g>
+                            <path d="M 35 85 L 35 160 L 38 160 L 38 123 L 55 123 L 55 160 L 58 160 L 58 120 L 55 120 L 55 85 L 58 85 L 58 82 L 35 82 Z M 38 85 L 52 85 L 52 120 L 38 120 Z" fill="#3D3D3D"/>
+                            <path d="M 52 123 L 58 160 L 61 160 L 55 123 Z" fill="#3D3D3D"/>
+                            <path d="M 68 160 L 71 160 L 71 123 L 88 123 L 88 160 L 91 160 L 91 82 L 88 82 L 88 120 L 71 120 L 71 82 L 68 82 Z" fill="#3D3D3D"/>
+                            <rect x="71" y="82" width="17" height="3" fill="#3D3D3D"/>
+                            <rect x="101" y="82" width="3" height="78" fill="#3D3D3D"/>
+                            <rect x="114" y="82" width="28" height="3" fill="#3D3D3D"/>
+                            <rect x="126" y="82" width="3" height="78" fill="#3D3D3D"/>
+                            <path d="M 152 82 L 152 160 L 155 160 L 155 85 L 169 85 L 169 160 L 172 160 L 172 82 Z M 155 82 L 169 82 L 169 85 L 155 85 Z M 155 157 L 169 157 L 169 160 L 155 160 Z" fill="#3D3D3D"/>
+                        </g>
+                        <g transform="translate(220, 90)">
+                            <circle cx="0" cy="0" r="12" fill="#FFD700"/>
+                            <path d="M 0,-12 L -3,-22 L 0,-20 L 3,-22 Z" fill="#3D3D3D"/>
+                            <path d="M 0,12 L -3,22 L 0,20 L 3,22 Z" fill="#3D3D3D"/>
+                            <path d="M -12,0 L -22,-3 L -20,0 L -22,3 Z" fill="#3D3D3D"/>
+                            <path d="M 12,0 L 22,-3 L 20,0 L 22,3 Z" fill="#3D3D3D"/>
+                        </g>
+                    </div>
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Access your Raito Opto Electronics account to manage orders, track shipments, and access exclusive resources.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>24/7 Technical Support</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Exclusive Product Documentation</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Real-time Order Tracking</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Priority Customer Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side - Login Form -->
+        <div class="login-right">
+            <a href="index.html" class="back-btn">← Back to Home</a>
+            
+            <div class="login-form-container">
+                <h2>Sign In</h2>
+                <p class="form-subtitle">Enter your credentials to access your account</p>
+
+                <!-- Login Form -->
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">📧</span>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔒</span>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword()">👁️</button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="remember">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-login">
+                        <span>Sign In</span>
+                        <div class="btn-loader"></div>
+                    </button>
+                </form>
+
+                <!-- Divider -->
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <!-- Social Login -->
+                <div class="social-login">
+                    <button class="social-btn google-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="#4285F4" d="M19.6 10.23c0-.82-.1-1.42-.25-2.05H10v3.72h5.5c-.15.96-.74 2.31-2.04 3.22v2.45h3.16c1.89-1.73 2.98-4.3 2.98-7.34z"/>
+                            <path fill="#34A853" d="M13.46 15.13c-.83.59-1.96 1-3.46 1-2.64 0-4.88-1.74-5.68-4.15H1.07v2.52C2.72 17.75 6.09 20 10 20c2.7 0 4.96-.89 6.62-2.42l-3.16-2.45z"/>
+                            <path fill="#FBBC05" d="M3.99 10c0-.69.12-1.35.32-1.97V5.51H1.07A9.973 9.973 0 000 10c0 1.61.39 3.14 1.07 4.49l3.24-2.52c-.2-.62-.32-1.28-.32-1.97z"/>
+                            <path fill="#EA4335" d="M10 3.88c1.88 0 3.13.81 3.85 1.48l2.84-2.76C14.96.99 12.7 0 10 0 6.09 0 2.72 2.25 1.07 5.51l3.24 2.52C5.12 5.62 7.36 3.88 10 3.88z"/>
+                        </svg>
+                        Continue with Google
+                    </button>
+                    <button class="social-btn microsoft-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20">
+                            <path fill="#f25022" d="M0 0h9.5v9.5H0z"/>
+                            <path fill="#00a4ef" d="M10.5 0H20v9.5h-9.5z"/>
+                            <path fill="#7fba00" d="M0 10.5h9.5V20H0z"/>
+                            <path fill="#ffb900" d="M10.5 10.5H20V20h-9.5z"/>
+                        </svg>
+                        Continue with Microsoft
+                    </button>
+                </div>
+
+                <!-- Sign Up Link -->
+                <div class="signup-link">
+                    Don't have an account? <a href="#" onclick="showSignup(); return false;">Create Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message"></span>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
