@@ -280,7 +280,7 @@ nav {
 
 
 .slide-2 {
-    background: url('./assets/images/bannerraito1.png');
+    background: url('/main/images/bannerraito1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1207,6 +1207,7 @@ footer {
     }
 
 }
+
 
 
 
