@@ -280,14 +280,14 @@ nav {
 
 
 .slide-2 {
-    background: url('https://github.com/viveklei/Raito-Opto/blob/main/assets/images/bannerraito1.png');
+    background: url('https://github.com/viveklei/Raito-Opto/main/assets/images/bannerraito1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide-3 {
-    background: url('https://github.com/viveklei/Raito-Opto/blob/main/assets/images/bannerraito2.png');
+    background: url('viveklei/Raito-Opto/blob/main/assets/images/bannerraito2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1207,3 +1207,4 @@ footer {
     }
 
 }
+
